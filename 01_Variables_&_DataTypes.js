@@ -36,6 +36,23 @@ let nullVariable = null;
 console.log(undefinedVariable, undefinedVariable + 3, `lets look at ${undefinedVariable}`);
 console.log(nullVariable, nullVariable + 3, `lets look at ${nullVariable}`);
 
+// Type Conversion 
+
+// There is EXPLICIT and IMPICIT conversion , explicit meaining we explicitely try to convert types, implicit is when JS "behund the scene" do conversion by himself
+
+let score = "100";
+console.log(typeof score);
+
+score = Number(score);
+console.log(typeof score);
+
+score = String(score);
+console.log(typeof score);
+
+// if you convert value to Boolean() then you get true even negative numbers but when you get 0 restul will be false also when you get empty string "" you will get false -- [this note is added in data types section and also in booleand and comperison section ]
+
+
+
 
 
 
@@ -154,6 +171,9 @@ console.log(thisIsArray.pop())                          // pop out last element 
 // BOOLEANS__________________________________________________________________________________________________________________________________
 console.log(true, false);
 
+// if you convert value to Boolean() then you get true even negative numbers but when you get 0 restul will be false also when you get empty string "" you will get false -- [this note is added in data types section and also in booleand and comperison section ]
+
+
 // Methoods Can Return True/False Statement
 let testingEmail = "hello@email.com";
 let testinArray = ["lukas", "mark", "joshua"]
@@ -164,7 +184,7 @@ console.log(testinArray.includes("lukas"));
 
 
 
-// COMPARIOSN_OPERATORS______________________________________________________________________________________________________________________
+// COMPARISON_OPERATORS______________________________________________________________________________________________________________________
 
 let testingNumber = 25;
 let testinString = "shaun";
