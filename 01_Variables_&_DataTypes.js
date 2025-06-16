@@ -192,6 +192,7 @@ let testinString = "shaun";
 // == is value equal
 // === is value and data type equal , strict comperation
 // != is value NOT equal
+// !== is value and data type NOT equal , strict comperation
 // > MORE then
 // < LESS then
 // >= MORE then or EQUAL
