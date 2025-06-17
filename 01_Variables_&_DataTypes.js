@@ -179,7 +179,7 @@ console.log(true, false);
 
 // if you convert value to Boolean() then you get true even negative numbers but when you get 0 restul will be false also when you get empty string "" you will get false -- [this note is added in data types section and also in booleand and comperison section ]
 
-// Methoods Can Return True/False Statement also arguments in IF statmenets, Conditions
+// Methoods Can Return True/False Statement also arguments in IF statmenets, Conditions (practicali they are used here in methods and other conditions like if , switch , for etc. / retuning if somethig is true or not)
 let testingEmail = "hello@email.com";
 let testinArray = ["lukas", "mark", "joshua"]
 
