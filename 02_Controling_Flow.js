@@ -128,6 +128,98 @@ if (!user) {
 
 
 
+// BREAK_&_CONTINUE__________________________________________________________________________________________________________________________
+
+const score = [50, 25, 0, 30, 100, 20, 10, 80]
+
+for (let i = 0; i < score.length; i++) {
+
+    if (score[i] === 0) {
+        continue;                                            // skip rest of the code bellow and CONTINUE loop 
+    };
+
+    console.log("Your score is: ", score[i]);
+
+    if (score[i] === 100) {
+        console.log("Congrats, you got top score.");
+        break;                                              // BREAK code here and continue rest code bellow loop
+    };
+
+}
+
+
+
+
+
+// SWITCH_STATEMANTS_________________________________________________________________________________________________________________________
+
+// switch statment use STRICT COMPARITION
+
+const grade = "D";
+
+switch (grade) {
+    case "A":
+        console.log("You got an A.");
+        break;
+    case "B":
+        console.log("You got an B.");
+        break;
+    case "C":
+        console.log("You got an C.");
+        break;
+    case "D":
+        console.log("You got an D.");
+        break;
+    case "E":
+        console.log("You got an E.");
+        break;
+    default:
+        console.log("Not a valid grade.");
+}
+
+// using if statemant, example for comepration
+
+if (grade === "A") {
+
+} else if (grade === "B") {
+
+} else if (grade === "C") {
+
+} else if (grade === "D") {
+
+} else if (grade === "E") {
+
+} else {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

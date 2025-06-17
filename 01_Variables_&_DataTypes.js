@@ -1,18 +1,20 @@
 // VARIABLES_________________________________________________________________________________________________________________________________
 
-var variable1 = 'its valid everywhere dont use it' // do not use
+var variable1 = 'its valid everywhere dont use it' // do not use, do not supprt block scope 
 
 
-const variable2 = "can not be changed, good practice" // can not be changed
+const variable2 = "can not be changed, good practice" // can not be changed, support block scope
 
-let variable3 = "can be string, number any value, can be changed"
+let variable3 = "can be string, number any value, can be changed" // can be changed, support block scope
 
 variable1 = "you can overwrite it even with different types"
 
 // can hold any data even fucntion 
 // use meaningufll and short names for varables, camel case myAge or my_age
-// variables can contain only latters , numbers , underscore and dolar sign , but cannot start with numbers
-// also its not possible to use perserved words like const for obvious resons
+// variables names can contain only latters , numbers , underscore and dolar sign , but cannot start with numbers also its not possible to use perserved words like const for obvious resons
+// LET and VAR can be overwrite for different value and datatype, CONST us unchangeable
+
+// block-scope - https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/learn/lecture/14034887?start
 
 
 
@@ -77,7 +79,6 @@ console.log(`
     <h2>There is also somhthing</h2>
     <p>My name is ${myName} and i was borin in ${yearOfBirth}.</p>
     `);
-
 
 
 //Character
@@ -166,25 +167,29 @@ console.log(thisIsArray.pop())                          // pop out last element 
 
 
 
-// BOOLEANS_AND_COMPARISONS
+//BOOLEANS_AND_COMPARISONS___________________________________________________________________________________________________________________
 
-// BOOLEANS__________________________________________________________________________________________________________________________________
+
+
+
+
+// BOOLEANS
+
 console.log(true, false);
 
 // if you convert value to Boolean() then you get true even negative numbers but when you get 0 restul will be false also when you get empty string "" you will get false -- [this note is added in data types section and also in booleand and comperison section ]
 
-
-// Methoods Can Return True/False Statement
+// Methoods Can Return True/False Statement also arguments in IF statmenets, Conditions
 let testingEmail = "hello@email.com";
 let testinArray = ["lukas", "mark", "joshua"]
-
 
 console.log(testingEmail.includes("@"));
 console.log(testinArray.includes("lukas"));
 
 
 
-// COMPARISON_OPERATORS______________________________________________________________________________________________________________________
+
+// COMPARISON_OPERATORS
 
 let testingNumber = 25;
 let testinString = "shaun";
@@ -197,7 +202,6 @@ let testinString = "shaun";
 // < LESS then
 // >= MORE then or EQUAL
 // <= LESS then or EQUAL
-
 
 // Loose Comperison ( different types can still be equal )*
 console.log(testingNumber == 25);          //true
