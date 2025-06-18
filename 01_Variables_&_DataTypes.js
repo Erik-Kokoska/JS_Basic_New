@@ -15,7 +15,7 @@ variable1 = "you can overwrite it even with different types"
 // LET and VAR can be overwrite for different value and datatype, CONST us unchangeable
 
 // block-scope - https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/learn/lecture/14034887?start
-
+// basicly variables are aviable in partical block of code and other block of codes inherited in original blcok of code 
 
 
 
