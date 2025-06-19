@@ -9,13 +9,16 @@ let variable3 = "can be string, number any value, can be changed" // can be chan
 
 variable1 = "you can overwrite it even with different types"
 
-// can hold any data even fucntion 
-// use meaningufll and short names for varables, camel case myAge or my_age
-// variables names can contain only latters , numbers , underscore and dolar sign , but cannot start with numbers also its not possible to use perserved words like const for obvious resons
-// LET and VAR can be overwrite for different value and datatype, CONST us unchangeable
+/* 
+-- can hold any data even fucntion 
+-- use meaningufll and short names for varables, camel case myAge or my_age
+-- variables names can contain only latters , numbers , underscore and dolar sign , but cannot start with numbers also its not possible to
+   use perserved words like const for obvious resons
+-- LET and VAR can be overwrite for different value and datatype, CONST us unchangeable */
 
 // block-scope - https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/learn/lecture/14034887?start
 // basicly variables are aviable in partical block of code and other block of codes inherited in original blcok of code 
+
 
 
 
@@ -38,7 +41,12 @@ let nullVariable = null;
 console.log(undefinedVariable, undefinedVariable + 3, `lets look at ${undefinedVariable}`);
 console.log(nullVariable, nullVariable + 3, `lets look at ${nullVariable}`);
 
-// Type Conversion 
+
+
+
+
+
+// TYPE_CONVERSION___________________________________________________________________________________________________________________________
 
 // There is EXPLICIT and IMPICIT conversion , explicit meaining we explicitely try to convert types, implicit is when JS "behund the scene" do conversion by himself
 
@@ -52,6 +60,64 @@ score = String(score);
 console.log(typeof score);
 
 // if you convert value to Boolean() then you get true even negative numbers but when you get 0 restul will be false also when you get empty string "" you will get false -- [this note is added in data types section and also in booleand and comperison section ]
+
+
+
+
+
+
+// PRIMITIVE_&_REFERENCE_TYPE________________________________________________________________________________________________________________
+
+// there are two data types --- difference is in how they are stored and used in memory
+
+
+
+/* 
+---- PRIMITIVE TYPES -------------------------------
+
+NUMBERS - STRINGS - BOOLEANS - NULL - UNDEFINED - SYMBOLS
+
+are stored in STACK, where is little bit less space and its quicker quicker*/
+
+
+//PRIMITIVE_VALUE
+let varOne = 50;
+let varTwo = varOne;
+console.log("varOne : " + varOne + " varTwo : " + varTwo);  // both are 50
+
+varOne = 60;
+console.log("varOne : " + varOne + " varTwo : " + varTwo);  // varOne is 60 and varTwo is till value 50
+
+
+
+/*
+---- REFERENCE TYPES --------------------------------
+
+OBJECT = (all types of objects) - OBJECT LITERALS - ARRAYS - FUNCTIONS - DATES - ALL OTHER OBJECTS
+
+are stored on heap,(reference types are also more complex then primitive types) which have more spac but its bit slowe */
+
+
+//REFERENCE_VALUE
+
+const userOne = { name: "Jack", age: 21 };
+const userTwo = userOne;
+
+console.log(userOne, userTwo); //in both cases name is same Jack
+
+userOne["name"] = "Daniel";
+
+console.log(userOne, userTwo); //in both cases name is same Daniel
+
+
+
+
+/* 
+so imporatant is this, when we store a PRIMITIVE VALUE in a variable, it adds that value to the STACK and it locks the variable name to it as an ACCESSOR to that value. --- When we store a REFERENCE TYPE in a variable like an object, it adds the object to the HEAP and then it adds a POINTER to that object on the stack. (pointer is like primitive type in stack, and that poinet "find/call" the object from heap) 
+
+when we make copy of the primitive type variable (example: let varOne = 50, let varTwo = varOne) JS create another 50 in STACK for varTWo and when you then change varOne to different value, varTwo will be still 50, ---- in other way when you crate copy of variable where is object, then we crate copy of pointer which points to the SAME OBJECT AS FIRST VARIABLE so when you change on original object will be change everywhere https://www.udemy.com/course/modern-javascript-from-novice-to-ninja/learn/lecture/14174797?start=30#overview  */
+
+
 
 
 
@@ -109,6 +175,7 @@ console.log(testingMethod.replace(".", "_")); // rteplace firt character . with 
 
 
 
+
 // NUMBERS___________________________________________________________________________________________________________________________________
 
 let likes = 10;
@@ -134,6 +201,7 @@ likes *= 2;     // *2
 
 // NaN - not a number
 console.log("hello" * 5); // when you try to use mathematicl operators with invalid value
+
 
 
 
@@ -167,9 +235,8 @@ console.log(thisIsArray.pop())                          // pop out last element 
 
 
 
+
 //BOOLEANS_AND_COMPARISONS___________________________________________________________________________________________________________________
-
-
 
 
 
@@ -177,15 +244,16 @@ console.log(thisIsArray.pop())                          // pop out last element 
 
 console.log(true, false);
 
-// if you convert value to Boolean() then you get true even negative numbers but when you get 0 restul will be false also when you get empty string "" you will get false -- [this note is added in data types section and also in booleand and comperison section ]
+/* 
+if you convert value to Boolean() then you get true even negative numbers but when you get 0 restul will be false also when you get empty string "" you will get false -- [this note is added in data types section and also in booleand and comperison section ]
 
-// Methoods Can Return True/False Statement also arguments in IF statmenets, Conditions (practicali they are used here in methods and other conditions like if , switch , for etc. / retuning if somethig is true or not)
+Methoods Can Return True/False Statement also arguments in IF statmenets, Conditions (practicali they are used here in methods and other conditions like if , switch , for etc. / retuning if somethig is true or not) */
+
 let testingEmail = "hello@email.com";
 let testinArray = ["lukas", "mark", "joshua"]
 
 console.log(testingEmail.includes("@"));
 console.log(testinArray.includes("lukas"));
-
 
 
 
