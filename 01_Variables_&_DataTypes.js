@@ -66,7 +66,7 @@ console.log(typeof score);
 
 
 
-// PRIMITIVE_&_REFERENCE_TYPE________________________________________________________________________________________________________________
+// PRIMITIVE_&_REFERENCE_TYPE___________________________________________________________________________________________________________
 
 // there are two data types --- difference is in how they are stored and used in memory
 
