@@ -77,7 +77,7 @@ console.log(typeof score);
 
 NUMBERS - STRINGS - BOOLEANS - NULL - UNDEFINED - SYMBOLS
 
-are stored in STACK, where is little bit less space and its quicker quicker*/
+are stored in STACK, where is little bit less space and its quicker*/
 
 
 //PRIMITIVE_VALUE
@@ -95,7 +95,7 @@ console.log("varOne : " + varOne + " varTwo : " + varTwo);  // varOne is 60 and 
 
 OBJECT = (all types of objects) - OBJECT LITERALS - ARRAYS - FUNCTIONS - DATES - ALL OTHER OBJECTS
 
-are stored on heap,(reference types are also more complex then primitive types) which have more spac but its bit slowe */
+are stored on heap,(reference types are also more complex then primitive types) which have more spac but its bit slower */
 
 
 //REFERENCE_VALUE

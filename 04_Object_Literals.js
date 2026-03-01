@@ -29,7 +29,7 @@ user["name"] = "Lukas";         // chaneging property
 console.log(user["name"]);      // showing changed property 
 
 
-// advatage of 2nd way is that if we have name of property in variable we can you it like this ->
+// advatage of 2nd way is that if we have name of property in variable we can use it like this ->
 
 const key = "location";         // key as string saved in variable  , we cant do taht with 1st way 
 
@@ -40,7 +40,7 @@ console.log(typeof user);       // showing type
 
 
 
-// METHODS_&_"THIS"_KEYWORDS_________________________________________________________________________________________________________________
+// METHODS_&_"THIS"_KEYWORDS_____________________________________________________________________________________________________
 
 // methods are fucntions associated with object , called by name of obect then . and then name of method
 // word THIS is associated also with object IN WHCIH WHERE ITS USED
@@ -59,12 +59,12 @@ let user2 = {
         console.log(`Here are users ${this.name} blogs :`);         // using this in method
         this.blogs.forEach(blog => console.log(blog))
     },
-    showThis: function () {                                         // fucntion for whowing user.this
-        console.log(this);
+    showThis: function () {                                         // fucntion for swhowing user.this
+        console.log(this, "one");
 
     },
     thisArrowFunc: () => {                                          // arrow funtion - works differently with THIS key word
-        console.log(this);
+        console.log(this, "two");
     }
 };
 

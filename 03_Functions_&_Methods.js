@@ -32,7 +32,7 @@ greeting("Erik")
 
 
 
-// ARGUMENTS_&_PARAMETERS____________________________________________________________________________________________________________________
+// ARGUMENTS_&_PARAMETERS_________________________________________________________________________________________________________
 
 // value inside function is called PARAMETER , parameters can be  set as defult and if you pass arguments in fuction then they will be overwriten.
 const hello = function (name = "human", year = "Year was not set") {
@@ -49,7 +49,7 @@ hello()
 
 
 
-// RETURN_VALUE______________________________________________________________________________________________________________________________
+// RETURN_VALUE_____________________________________________________________________________________________________________________
 
 const calcArea = function (radius) {
     return 3.14 * radius ** 2
@@ -60,7 +60,7 @@ const calcArea = function (radius) {
 
 
 
-// ARROW_FUCNTION____________________________________________________________________________________________________________________________
+// ARROW_FUCNTION___________________________________________________________________________________________________________________
 
 // when we have more then one parameter we need(), aleso when there is no parameter at all
 const calcAreaArrow = (radius) => {
@@ -69,7 +69,6 @@ const calcAreaArrow = (radius) => {
 
 // when we have only one parameter we can get rid off (), also can use one line without retrun , if we have simple return
 const calcAreaArrow2 = radius => 3.14 * radius ** 2
-
 
 
 
@@ -97,25 +96,27 @@ hisName.toUpperCase();
 
 
 
-// CALLBACK_&_FOREACH________________________________________________________________________________________________________________________
+// CALLBACK_&_FOREACH____________________________________________________________________________________________________________
 
 
 // CALLBACK
 // when you pas function as argument in another fuction , its called CALLBACK 
 
-const myFunc = (callbackFunc) => {
-    let value = 50;
-    callbackFunc(value)
+// so whats going on > myFunc call funciton funcAsArg , give it score and then funcAsArg +5 this value
 
+const myFunc = x => {
+    let score = 50;
+    x(score)
 }
 
-function funcAsArg(value) {
-    console.log(value);
+const funcAsArg = x => {
+    console.log(x+5);
 }
+
 
 
 myFunc(funcAsArg)
-myFunc(value => console.log(value))         //same thig with arrow fucntion inside
+myFunc(value => console.log(value+6))         //same thig with arrow fucntion inside
 
 // so you create function myFucn , when you call this fuction as argument you pass another fuction you created in this case funcAsArg , then this function funcAsArg runs in first function myFunc, and take another argument which is variable value 
 
