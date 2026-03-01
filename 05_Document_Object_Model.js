@@ -1,4 +1,4 @@
-// Query Selector _____________________________________________________________________________________________________________
+// QUERY SELECTOR____________________________________________________________________________________________________
 
 const para = document.querySelector('p');  //grap first p tag
 const err = document.querySelector('.error');  //grap class error
@@ -20,7 +20,7 @@ allPara.forEach(element => {
 
 const allErr = document.querySelectorAll(".error");
 
-//Other ways _____________________________________________________________________________________________________________
+//Other ways _______________________________________
 
 
 // get an element by ID
@@ -52,3 +52,7 @@ console.log(paras[0])
 .keyes()
 .values()
 */
+
+
+// ADD AND CHANGE PAGE CONTENT _____________________________________________________________________________________
+
